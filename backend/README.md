@@ -14,7 +14,7 @@ This project is not just an authentication system but a reusable foundation for 
 - TypeScript
 
 ### Database
-- PostgreSQL
+- Postgresql
 - Prisma ORM
 
 ### Containerization
