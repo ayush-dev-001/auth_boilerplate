@@ -1,0 +1,22 @@
+node_modules
+dist
+.env
+.env.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime files
+.DS_Store
+
+# TypeScript cache
+*.tsbuildinfo
+node_modules/
+dist/

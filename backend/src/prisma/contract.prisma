@@ -1,0 +1,22 @@
+// use prisma-8
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  username  String?
+  name      String?
+  password  String?
+  age       Int
+  createdAt TimestamptzString @default(now())
+  updatedAt temporal.updatedAtString()
+  address   Address[]
+}
+model Address{
+  id        Int      @id @default(autoincrement())
+  city      String
+  country   String
+  userId    Int 
+  user      User @relation(fields: [userId], references: [id])
+}
+
+
