@@ -1,13 +1,17 @@
 import express from 'express';
 import type { Request, Response } from 'express';
-import {signupRouter} from './routes/signup' 
+import {signupRouter,} from './routes/signup' 
+import { signinRouter } from './routes/signin';
+import cookieParser from 'cookie-parser';
 
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 
 
 app.use("/api",signupRouter);
+app.use("/api",signinRouter);
 
 
 // app.post('/users', async (req: Request, res: Response) => {
